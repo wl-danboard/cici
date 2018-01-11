@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,minimum-scale=1.00001,maximum-scale=1.00001,shrink-to-fit=no,user-scalable=no,minimal-ui" name="viewport"/>
+	<title></title>
+	<!-- 框架样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/uikit.min.css" />
+	<!-- 自定义样式 -->
+	<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+	<script src="../js/jquery.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+</head>
+<body>
+    <!--标题-->
+    <div class="uk-text-center ald-title">
+        <div class="ald-position-left ald-position-ico">
+            <a class="ald-menu-link ald-a-back" href="">
+                <i class="uk-icon-angle-left uk-text-middle"></i>
+                <span class="uk-text-middle ald-back">返回</span>
+            </a>
+        </div>
+        基本信息
+    </div>
+    <!--步骤区域-->
+    <div class="uk-grid uk-grid-collapse uk-text-center ald-grid ald-grid-step ald-color-c4">
+        <div class="uk-width-1-3 ald-step-item ald-step-item-start ald-relative ald-step-activ">
+            <!--连接线左半部分-->
+            <div class="ald-step-line-left"></div>
+            <!--节点圆-->
+            <div class="ald-step-circular ald-center"></div>
+            <div class="ald-step-circular-in ald-center">1</div>
+            <!--连接线右半部分-->
+            <div class="ald-step-line-right"></div>
+            <p class="ald-step-text">基本信息</p>
+        </div>
+        <div class="uk-width-1-3 ald-step-item ald-relative">
+            <!--连接线左半部分-->
+            <div class="ald-step-line-left"></div>
+            <!--节点圆-->
+            <div class="ald-step-circular ald-center"></div>
+            <div class="ald-step-circular-in ald-center">2</div>
+            <!--连接线右半部分-->
+            <div class="ald-step-line-right"></div>
+            <p class="ald-step-text">绑定银行卡</p>
+        </div>
+        <div class="uk-width-1-3 ald-step-item ald-step-item-end ald-relative">
+            <!--连接线左半部分-->
+            <div class="ald-step-line-left"></div>
+            <!--节点圆-->
+            <div class="ald-step-circular ald-center"></div>
+            <div class="ald-step-circular-in ald-center ald-step-circular-in-active">3</div>
+            <!--连接线右半部分-->
+            <div class="ald-step-line-right"></div>
+            <p class="ald-step-text ald-step-text-active">资格认证</p>
+        </div>
+    </div>
+    <hr class="uk-grid-divider ald-grid-divider">
+    <!--上传认证资料块-->
+    <div class="uk-grid">
+        <!--上传认证资料条目-->
+        <div class="uk-width-1-1 uk-text-left ald-row-small">
+            <span class="ald-prompt">上传认证资料</span>
+        </div>
+        <!--上传证件块-->
+        <div class="uk-width-1-1">
+            <div class="uk-grid uk-grid-collapse uk-text-center ald-bg">
+                <!--每一个证件块-->
+                <div class="uk-width-1-3 ald-certificates-item">
+                    <a class="ald-menu-link ald-login-text" href="">
+                        <div class="ald-photo-wrap ald-relative">
+                            <div class="ald-correct-position">
+                                <i class="uk-icon-check ald-certificates-i-bg ald-correct-bg"></i>
+                            </div>
+                            <img class="ald-photo" src="../images/ald_id_pic@3x.png">
+                        </div>
+                        <div class="ald-certificates-text">
+                            本人正面照片
+                        </div>
+                    </a>
+                </div>
+                <!--每一个证件块-->
+                <div class="uk-width-1-3 ald-certificates-item ald-certificates-border">
+                    <a class="ald-menu-link ald-login-text" href="">
+                        <div class="ald-photo-wrap ald-relative">
+                            <div class="ald-error-position">
+                                <i class="uk-icon-close ald-certificates-i-bg ald-error-bg"></i>
+                            </div>
+                            <img class="ald-photo-default" src="../images/ald_student_id_card@3x.png">
+                        </div>
+                        <div class="ald-certificates-text">
+                            身份证正面照
+                        </div>
+                    </a>
+                </div>
+                <!--每一个证件块-->
+                <div class="uk-width-1-3 ald-certificates-item">
+                    <a class="ald-menu-link ald-login-text" href="">
+                        <div class="ald-photo-wrap ald-relative">
+                            <img class="ald-photo-default" src="../images/ald_id_card@3x.png">
+                        </div>
+                        <div class="ald-certificates-text">
+                            身份证正面照
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--提交按钮-->
+    <div class="uk-text-center ald-grid-margin-bottom">
+        <a class="uk-button ald-block-button-92-100 ald-block-button-92-100-margin-top ald-button-large ald-button-large-color" href="">提交</a>
+    </div>
+    <!--遮罩层-->
+    <div class="ald-mask"></div>
+    <div class="uk-text-center ald-region-dialog ald-uploadPhotos-dialog">
+        <div class="ald-uploadPhotos-wrap">
+            <div class="ald-uploadPhotos-bg">
+                <img class="ald-uploadPhotos" src="../images/ald_id_pic@3x.png">
+            </div>
+        </div>
+        <hr class="uk-grid-divider ald-grid-divider">
+        <div class="ald-row">
+            <a class="ald-menu-link ald-a-btn ald-a-btn-color" href="">
+                点击上传照片
+            </a>
+        </div>
+    </div>
+</body>
+</html>
