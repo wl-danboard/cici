@@ -652,8 +652,17 @@ label{
 	color: #fff;
 }
 .ald-index-top-inside img{
-	transform:translate(-50%,-38%);
+	animation:mymove 1.5s infinite linear;
+	transform:translate3d(-50%,-38%,0);
 	width: 52%;
+}
+@keyframes mymove{
+	0%{
+		transform:translate3d(-50%,-38%,0) rotate(0);
+	}
+	100%{
+		transform:translate3d(-50%,-38%,0) rotate(360deg);
+	}
 }
 .ald-index-top-inside a{
 	transform:translate(-50%,16%);
